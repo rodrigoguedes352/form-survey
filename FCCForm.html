@@ -1,0 +1,75 @@
+<main id="main">
+  <link rel="stylesheet" href="./FCCForm.css">
+  <head>
+    <h1 id="title">Form about you</h1>
+    <p id="description"><i>Thank you for letting me get to know you better</i></p>
+  </head>
+
+  <body>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here" class="forms" required>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email here" class="forms" required>
+      </div>
+      <div>
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="age" id="number" placeholder="Enter your age here" class="forms" min="5" max="120" required>
+      </div>Which one applies better to your current situation
+      <div>
+        <select id="dropdown" name="role" required class="forms">
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>How happy are you currently in your situation
+        <div>
+          <label>
+            <input id="Happy" name="Happy" value="happy" type="radio" checked> Happy 
+          </label>
+          <label>  
+            <input id="Okay" name="Happy" value="Okay" type="radio"> Okay
+          </label>
+          <label>
+            <input id="Unhappy" name="Happy" value="unhappy" type="radio"> Unhappy
+          </label>
+        </div>What do you like doing
+        <div class="checkbox">
+          <label>
+            <input id="outside" value="outside" type="checkbox"> Being outside
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="inside" value="inside" type="checkbox"> Being inside
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="games" value="games" type="checkbox"> Playing videogames
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="Friends" value="Friends" type="checkbox"> Being with friends
+          </label>
+        <div class="checkbox">
+          <label>
+            <input id="Cook" value="Cook" type="checkbox"> Cooking
+          </label>
+        </div>
+        <div class="textarea">Do you have anything else you want to say
+        </div>
+        <div class="textarea2">
+          <textarea id="comments"  class="textarea2"  name="comment"  placeholder="Say it here"></textarea>
+        </div>
+        <div class="textarea">
+          <button type="submit" id="submit" class="submit">Submit
+        </div>
+  </body>
